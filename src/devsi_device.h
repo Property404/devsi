@@ -1,0 +1,4 @@
+namespace Devsi {
+	class Device{
+	};
+}
