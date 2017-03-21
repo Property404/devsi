@@ -9,6 +9,14 @@ namespace Devsi {
 
 	/* Private primer for clickUp and clickDown */
 	void clickPartial(int down, int button);
+	/*Platform specifics */
+	#ifdef DEVSI_X11
+	Display *display;
+	Window root;
+	XEvent event;
+	size_t displayX;
+	size_t displayY;
+	#endif
 	public:
 	Mouse();
 	// get and set absolute position of mouse
